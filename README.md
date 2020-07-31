@@ -14,15 +14,18 @@ It can:
  
 
 
-1) Languages Used :
+
+
+
+ Languages Used :
 
      *BackEnd - Python*
 
      *FrontEnd - HTML, CSS, JavaScript*
 
      *Bootstrap Framework*
-
-2) Fight corona Chatbot Assistant built using *IBM Cloud Services*.
+     
+ Fight corona Chatbot Assistant built using *IBM Cloud Services*.
 
 
 
