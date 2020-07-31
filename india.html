@@ -1,0 +1,49 @@
+{%extends 'base.html'%}
+
+
+{% block head %}
+<style>
+    .buttons {
+        float: right;
+    }
+
+    .videos {
+        float: initial;
+    }
+
+    body {
+    background-image: url('https://cloudinary.hbscdn.org/image/upload/s--wJNL36Fu--/q_auto,c_fill,h_1296,w_2800,/v20071006/1A28265F53690B2B28472F0C4B4CF1F1.jpg');
+          background-size: cover;
+          
+          background-repeat: no-repeat;
+          background-color: black;
+    }
+</style>
+{% endblock %}
+
+
+{% block body %}
+
+
+<br><br><br>
+<div class="btn-group-lg btn-group-horizontal">
+    
+<a class="btn btn-primary btn-lg" href="/news" role="button">COVID-19 News ></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-primary btn-lg" href="https://www.civilaviation.gov.in/sites/default/files/State_wise_quarantine_regulation-converted.pdf" role="button">State-wise Policies ></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-primary btn-lg" href="/testingcentres" role="button">Testing Centres ></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-primary btn-lg" href="https://maps.delhivery.com/covid/" role="button">Containment Zones ></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-primary btn-lg" href="https://boi.gov.in/content/advisory-travel-and-visa-restrictions-related-covid-19-1" role="button">Travel Restrictions ></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+<br>
+<br>
+
+<div class="videos">
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/Eh8BOSu5JVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/5aTPZyyEybc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/sFiy4kvRcSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/3fjMxSyz36U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+{% endblock %}

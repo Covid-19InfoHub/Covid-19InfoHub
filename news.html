@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+{% block head %}
+
+<style>
+    h3 {
+        color: #ffffff;
+    }
+
+    h5 {
+        color: #ffffff;
+    }
+
+    .container {
+        color: #ffffff;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <br><br><br>
+ 
+    {% for new, des, i in context %}
+ 
+    <img src="{{i}}" alt="" width="300" height="161">
+    <h3>News: </h3> {{new}}
+    <h5>Description: </h5> {{des}}
+    
+ 
+    {% endfor %}
+
+ 
+</div>
+{% endblock %}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 InfoHub</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+          background-image: url('https://cloudinary.hbscdn.org/image/upload/s--wJNL36Fu--/q_auto,c_fill,h_1296,w_2800,/v20071006/1A28265F53690B2B28472F0C4B4CF1F1.jpg');
+          background-size: cover;
+          
+          background-repeat: no-repeat;
+          background-color: black;
+      }
+
+
+      .display-3{
+        color: #ffffff;
+        
+      }
+
+      .nav-item {
+        font-size: 18px;
+      }
+
+      /* ------------- */
+/* Basic Setting */
+/* ------------- */
+
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 640px;
+    background-color: #000000;
+}
+
+h3 {
+    font-family: var(--fonts-style-x);
+    font-size: 2.25em;
+}
+
+h6 {
+    font-family: var(--fonts-style-x);
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    color: #fff;
+    background-color: #005AEE;
+}
+
+/* ======================== */
+/* Just Copy The Code Below */
+
+/* ------------- */
+/* Content Style */
+/* ------------- */
+
+.card-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+}
+
+.card {
+    height: 470px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #8fc7d544;
+    overflow: hidden;
+}
+
+.card .card-top {
+    height: 236px;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    background-color: #d1e8ee;
+    overflow: hidden;
+}
+
+.card .card-top a {
+    display: block;  
+    height: 100%;  
+}
+
+.card .card-top a img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center; 
+    transition: 300ms;
+}
+
+.card .card-content {
+    padding: 30px;
+}
+
+.card .card-content .tag {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card .tag-travel {
+    color: #33459b;
+}
+
+.card .tag-nature {
+    color: #339b4b;
+}
+
+.card .tag-architecture {
+    color: #9b3d33;
+}
+
+.card .title {
+    color: #303336;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+.card p {
+    color: #7B8591;
+    margin-top: 20px;
+}
+
+
+/* ---------------------------- */
+/* Content Style | Hover Effect */
+/* ---------------------------- */
+
+.card .card-top a img:hover {
+    opacity: .75;
+}
+
+.card .title:hover {
+    color: #303336bb;
+}
+
+/* Just Copy The Code Above */
+/* ======================== */
+
+
+/* Display this style when screen-width is lower than 1240px */
+@media only screen and (max-width: 1240px) {
+
+    main {
+        display: block;
+        height: auto;
+        min-height: max(640px, 100vh);
+        padding: 80px 0;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin: 0;
+        padding: 40px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+}
+
+/* Display this style when screen-width is lower than 768px */
+@media only screen and (max-width: 768px) {
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Display this style when screen-width is lower than 425px */
+@media only screen and (max-width: 425px) {
+
+    .card-container {
+        padding: 20px;
+    }
+
+}
+
+
+/* ----------- */
+/* UI Designer */
+/* ----------- */
+
+.designer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-weight: 400;
+    color: #46a2b9;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+
+.designer a {
+    text-decoration: none;
+    color: #23515d;
+}
+
+body:hover .designer {
+    opacity: 1;
+}
+
+.navbar-brand {
+        font-size: 25px;
+      }
+    </style>
+</head>
+<body>
+
+  
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"> Covid-19 InfoHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/status">Status</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="/india">India</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/helpline">Helpline</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            
+          </ul>
+
+        </div>
+      </nav><br><br><br><br><br>
+    
+        <center>
+          <br><br>
+        <h1 class="display-3">Everything you need to know to get through this Pandemic</h1>
+        <br><br>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="/info1" role="button">How to Protect Yourself > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn btn-primary btn-lg" href="/info2" role="button">What to do if you're sick > </a>
+        </p>
+        
+
+      
+
+      <div class="bot">
+        <script>
+          window.watsonAssistantChatOptions = {
+              integrationID: "9ed85bee-11b1-42d2-a833-aa78c2ac90b8", // The ID of this integration.
+              region: "eu-gb", // The region your integration is hosted in.
+              serviceInstanceID: "e60181a5-1fc4-4085-8015-5c7c4bf178d0", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+          });
+        </script>
+      </div><br><br><br><br><br><br>
+      
+      <main>
+        <!-- ======================== -->
+        <!-- Just Copy The Code Below -->
+        <section class="card-container">
+            <div class="card">
+                <div class="card-top">
+                    <a><img src="https://cdn.acodez.in/wp-content/uploads/2019/04/Illustration-Trends-2019.png" alt="About Website"></a>
+                </div>
+                <div class="card-content">
+                    
+                    <h4 class="title">About the Website</h4>
+                    <p>Simple, user-friendly website and a one stop destination for everything you need to get through this Pandemic. Make sure to Explore!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <a><img src="https://miro.medium.com/max/1050/1*KnDlvRBZuEqKQUqlrg-nTQ@2x.png" alt="About Chatbot"></a>
+                </div>
+                <div class="card-content">
+                    
+                    <h4 class="title">About the Chatbot</h4>
+                    <p>This human-like and informative chatbot is here to answer your FAQs. Just click the blue button on the bottom-right corner and Give it a try!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <a><img src="https://cdn.prdaily.com/wp-content/uploads/2019/09/Crisis_meeting_response_mistakes.jpg" alt="Crisis Communication"></a>
+                </div>
+                <div class="card-content">
+                    
+                    <h4 class="title">Crisis Communication</h4>
+                    <p>Crisis communication plays a vital role in times like these and we need to stick together to get through this and stay informed.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Just Copy The Code Above -->
+        <!-- ======================== -->
+    </main>
+    </center>
+  
+</body>
+</html>
+
