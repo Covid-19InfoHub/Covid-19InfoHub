@@ -25,7 +25,7 @@ It can:
 
      Bootstrap Framework
      
- Fight corona Chatbot Assistant built using *IBM Cloud Services*.
+ Fight corona Chatbot Assistant built using ***IBM Cloud Services***.
  
  Visit the website using the following link : http://covidinfohub.pythonanywhere.com/
  
