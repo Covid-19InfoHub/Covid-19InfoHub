@@ -28,6 +28,8 @@ It can:
  Fight corona Chatbot Assistant built using *IBM Cloud Services*.
  
  Visit the website using the following link : http://covidinfohub.pythonanywhere.com/
+ 
+ A few screenshots of the website have also been attached. Check it out!
 
 
 
