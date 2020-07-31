@@ -32,15 +32,15 @@ It can:
  A few screenshots of the website have also been attached. Check it out!
  
  
-Follow the below instructions carefully:
+_Follow the below instructions carefully:_
 
-1) Create a folder.
+_1) Create a folder._
 
-2) Paste ONLY app.py in that folder.
+_2) Paste ONLY app.py in that folder._
 
-3) Create a new folder in that folder and call it 'templates', any other name won't work.
+_3) Create a new folder in that folder and call it 'templates', any other name won't work._
 
-4) Paste all the html files in that folder.
+_4) Paste all the html files in that folder._
 
 Happy Coding!
 
