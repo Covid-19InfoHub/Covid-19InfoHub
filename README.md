@@ -19,11 +19,11 @@ It can:
 
  Languages Used :
 
-     **_BackEnd - Python_**
+     BackEnd - Python
 
-     **_FrontEnd - HTML, CSS, JavaScript_**
+     FrontEnd - HTML, CSS, JavaScript
 
-     **_Bootstrap Framework_**
+     Bootstrap Framework
      
  Fight corona Chatbot Assistant built using *IBM Cloud Services*.
  
