@@ -1,4 +1,4 @@
-Languages Used :
+1) Languages Used :
 
 *BackEnd - Python*
 
@@ -6,7 +6,7 @@ Languages Used :
 
 *Bootstrap Framework*
 
-Fight corona Chatbot Assistant built using *IBM CLoud Services*.
+2) Fight corona Chatbot Assistant built using *IBM CLoud Services*.
 
 
 
