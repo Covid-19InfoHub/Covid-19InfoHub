@@ -36,9 +36,9 @@ _Follow the below instructions carefully:_
 
 _1) Create a folder._
 
-_2) Paste ONLY app.py in that folder._
+_2) Paste ONLY **app.py** in that folder._
 
-_3) Create a new folder in that folder and call it 'templates', any other name won't work._
+_3) Create a new folder in that folder and call it **templates**, any other name won't work._
 
 _4) Paste all the html files in that folder._
 
