@@ -34,13 +34,13 @@ It can:
  
 Follow the below instructions carefully:
 
-Create a folder.
+1) Create a folder.
 
-Paste ONLY app.py in that folder.
+2) Paste ONLY app.py in that folder.
 
-Create a new folder in that folder and call it 'templates', any other name won't work.
+3) Create a new folder in that folder and call it 'templates', any other name won't work.
 
-Paste all the html files in that folder.
+4) Paste all the html files in that folder.
 
 Happy Coding!
 
