@@ -4,6 +4,7 @@ import json
 import smtplib
 from newsapi import NewsApiClient
 
+
 app = Flask(__name__)
 newsapi = NewsApiClient(api_key='551c5fa6a12d40b78a93259b3a488ed0')
 
